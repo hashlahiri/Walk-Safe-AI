@@ -1,8 +1,8 @@
-# Walk Safe Routes
+# Walk Safe AI
 
 > “Can I walk from here to there right now – and how safe is it likely to be?”
 
-Walk Safe Routes is a learning/portfolio project exploring how to score walking routes on **safety**, not just distance. Given an origin and destination, the app aims to compare a shortest route against a safer alternative using open data (lighting, police facilities, incident hotspots) plus simple heuristics.
+Walk Safe AI is a learning/portfolio project exploring how to score walking AI on **safety**, not just distance. Given an origin and destination, the app aims to compare a shortest route against a safer alternative using open data (lighting, police facilities, incident hotspots) plus simple heuristics.
 
 ---
 
@@ -71,9 +71,9 @@ Walk Safe Routes is a learning/portfolio project exploring how to score walking 
 
 ## Project Structure (planned)
 ```text
-walk-safe-routes/
+walk-safe-AI/
 ├─ backend/
-│  ├─ src/main/java/com/hashlahiri/walksaferoutes/
+│  ├─ src/main/java/com/hashlahiri/walksafeai/
 │  │  ├─ controller/    # REST endpoints
 │  │  ├─ service/       # safety scoring, orchestration
 │  │  ├─ repository/    # Mongo repositories + geospatial queries
@@ -120,7 +120,7 @@ mvn spring-boot:run
 
 Example backend env vars to plan for:
 ```
-MONGODB_URI=mongodb://localhost:27017/walk_safe_routes
+MONGODB_URI=mongodb://localhost:27017/walk_safe_ai
 ROUTING_API_BASE=https://api.openrouteservice.org
 ROUTING_API_KEY=your-key
 ```
