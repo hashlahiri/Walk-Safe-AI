@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: walksafeai-backend
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/walk_safe_ai}
+
+server:
+  port: 9000
+
+walksafe:
+  routing:
+    provider: ${ROUTING_PROVIDER:ors}  # ors | mock
+    base-url: ${ROUTING_API_BASE:https://api.openrouteservice.org}
+    api-key: ${ROUTING_API_KEY:}
+    timeout-ms: 8000
+
+  scoring:
+    sample-radius-m: 60
+    sample-point-gap-m: 80
+    nearby-default-radius-m: 1200
