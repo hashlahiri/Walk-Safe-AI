@@ -1,0 +1,25 @@
+{
+  "name": "walksafeai-frontend",
+  "private": true,
+  "scripts": {
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "lucide-react": "latest",
+    "maplibre-gl": "^5.14.0",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-leaflet": "^4.2.1"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.21",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "tailwindcss": "latest",
+    "typescript": "5.9.3"
+  }
+}
